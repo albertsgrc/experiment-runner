@@ -19,9 +19,5 @@
         "outDir": "./dist",
         "baseUrl": "./"
     },
-    "exclude": [
-        "node_modules",
-        "dist",
-        "fixtures"
-    ]
+    "exclude": ["node_modules", "dist", "fixtures"]
 }

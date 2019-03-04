@@ -2,7 +2,7 @@
     "name": "tsapp",
     "version": "1.0.0",
     "description": "Typescript app starter",
-    "main": "src/main.ts",
+    "main": "index.js",
     "scripts": {
         "build": "tsc -p tsconfig.build.json && cp tsconfig.json dist/",
         "format": "prettier --write \"src/**/*.ts\"",
