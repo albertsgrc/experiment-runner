@@ -7,13 +7,9 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Debug",
-            "program": "${workspaceFolder}/src/main.ts",
-            "preLaunchTask": "build",
-            "outFiles": ["${workspaceFolder}/dist/**/*.js"],
-            "sourceMaps": true,
-            "smartStep": true,
-            "internalConsoleOptions": "openOnSessionStart"
+            "name": "Cluster",
+            "program": "${workspaceFolder}/index.js",
+            "autoAttachChildProcesses": true
         }
     ]
 }

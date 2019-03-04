@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  api_test:
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: >
+      sh -c "cp -R /tmp/node_modules /opt/app/node_modules && npm run start:dev"
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/opt/app
