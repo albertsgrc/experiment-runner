@@ -20,6 +20,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@types/bull": "^3.5.11",
         "@types/jest": "^23.3.14",
         "@types/lodash": "^4.14.121",
         "@types/node": "^10.12.29",
@@ -36,8 +37,10 @@
         "typescript": "^3.3.3333"
     },
     "dependencies": {
+        "bull": "^3.7.0",
         "lodash": "^4.17.11",
-        "pino": "^5.11.1"
+        "pino": "^5.11.1",
+        "rxjs": "^6.4.0"
     },
     "jest": {
         "moduleFileExtensions": [
