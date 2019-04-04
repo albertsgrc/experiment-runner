@@ -1,7 +1,7 @@
 {
-    "name": "tsapp",
-    "version": "1.0.0",
-    "description": "Typescript app starter",
+    "name": "experiment-runner",
+    "version": "0.0.0",
+    "description": "Experiment runner",
     "main": "index.js",
     "scripts": {
         "build": "tsc -p tsconfig.build.json && cp tsconfig.json dist/",
