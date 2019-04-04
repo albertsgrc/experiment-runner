@@ -1,5 +1,5 @@
 export interface ExperimentRunnerOptions {
-    printProgress: boolean;
+    printProgress?: boolean;
 
-    numRepetitions: number;
+    numRepetitions?: number;
 }

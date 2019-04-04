@@ -5,12 +5,12 @@ import { VariableArgument } from "./variable-argument.interface";
 export interface Experiment {
     id: string;
 
-    numRepetitions: number;
+    numRepetitions?: number;
 
-    active: boolean;
+    active?: boolean;
 
-    variableArguments: VariableArgument[];
-    constantArguments: ConstantArgument[];
+    variableArguments?: VariableArgument[];
+    constantArguments?: ConstantArgument[];
 
-    forEach: Experiment;
+    forEach?: Experiment;
 }
