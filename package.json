@@ -1,0 +1,67 @@
+{
+    "name": "tsapp",
+    "version": "1.0.0",
+    "description": "Typescript app starter",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json && cp tsconfig.json dist/",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "start": "node index.js",
+        "start:dev": "nodemon | pino-pretty -t 'dd/mm HH:MM:ss.l'",
+        "start:debug": "nodemon --config nodemon-debug.json | pino-pretty -t 'dd/mm HH:MM:ss.l'",
+        "start:prod": "node dist/src/main.js",
+        "lint": "tslint -p tsconfig.json -c tslint.json",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:cov": "jest --coverage",
+        "test:e2e": "jest --config ./test/jest-e2e.json",
+        "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/jest": "^23.3.14",
+        "@types/lodash": "^4.14.121",
+        "@types/node": "^10.12.29",
+        "@types/pino": "^5.8.5",
+        "jest": "^24.1.0",
+        "nodemon": "^1.18.10",
+        "pino-pretty": "^2.5.0",
+        "prettier": "^1.16.4",
+        "ts-jest": "^23.10.5",
+        "ts-loader": "^5.3.3",
+        "ts-node": "^7.0.1",
+        "tsconfig-paths": "^3.8.0",
+        "tslint": "^5.13.1",
+        "typescript": "^3.3.3333"
+    },
+    "dependencies": {
+        "lodash": "^4.17.11",
+        "pino": "^5.11.1"
+    },
+    "jest": {
+        "moduleFileExtensions": [
+            "js",
+            "json",
+            "ts"
+        ],
+        "rootDir": "./",
+        "testRegex": ".spec.ts$",
+        "transform": {
+            "^.+\\.(t|j)s$": "ts-jest"
+        },
+        "coverageDirectory": "../coverage",
+        "testEnvironment": "node",
+        "modulePaths": [
+            "<rootDir>"
+        ],
+        "coverageReporters": [
+            "json",
+            "lcov"
+        ],
+        "globals": {
+            "NODE_ENV": "test"
+        },
+        "bail": true
+    }
+}
