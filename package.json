@@ -38,6 +38,7 @@
     },
     "dependencies": {
         "bull": "^3.7.0",
+        "fast-stats": "0.0.5",
         "lodash": "^4.17.11",
         "pino": "^5.11.1",
         "rxjs": "^6.4.0"
